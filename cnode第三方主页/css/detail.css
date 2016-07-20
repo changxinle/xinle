@@ -1,0 +1,35 @@
+body{
+    background: #F8F8F8;
+}
+.bd-white{
+    background: white;
+}
+/*ul{
+    padding: 0;
+}
+li{
+    list-style: none;
+}*/
+@media only screen and (min-width: 100px) and (max-width: 992px) {
+    #login{
+        display: none;
+    }
+}
+#content img{
+    max-width: 100%;
+}
+#content{
+    padding-bottom: 10vh;
+    margin-bottom: 2vh;
+}
+#auther{
+    padding-bottom: 5vh;
+    margin-bottom: 2vh;
+}
+#pinglun p img{
+    width: 10%;
+}
+#pinglun{
+    padding-bottom: 5vh;
+    margin-bottom: 2vh;
+}

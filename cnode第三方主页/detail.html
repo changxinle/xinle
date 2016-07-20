@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <meta charset="utf-8" />
+        <title>cnode</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+
+        <!-- 新 Bootstrap 核心 CSS 文件 -->
+        <link rel="stylesheet" href="//cdn.bootcss.com/bootstrap/3.3.5/css/bootstrap.min.css">
+        <link rel="stylesheet" type="text/css" href="css/detail.css" />
+        <!-- jQuery文件。务必在bootstrap.min.js 之前引入 -->
+        <script src="//cdn.bootcss.com/jquery/1.11.3/jquery.min.js"></script>
+        <!-- 最新的 Bootstrap 核心 JavaScript 文件 -->
+        <script src="//cdn.bootcss.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+    </head>
+
+    <body>
+        <!--导航栏部分-->
+        <nav class="navbar navbar-default">
+            <div class="container-fluid">
+                <!-- Brand and toggle get grouped for better mobile display -->
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+                    <a class="navbar-brand" href="index.html">cnode</a>
+                </div>
+
+                <!-- Collect the nav links, forms, and other content for toggling -->
+                <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                    <ul class="nav navbar-nav">
+                        <li class="active">
+                            <a href="index.html">首页<span class="sr-only">(current)</span></a>
+                        </li>
+                        <li>
+                            <a href="##">新手入门</a>
+                        </li>
+                        <li>
+                            <a href="##">API</a>
+                        </li>
+                        <li>
+                            <a href="##">关于</a>
+                        </li>
+                        <li>
+                        </li>
+                        <li class="dropdown">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">登录/注册 <span class="caret"></span></a>
+                            <ul class="dropdown-menu">
+                                <li>
+                                    <a href="##">登录</a>
+                                </li>
+                                <li>
+                                    <a href="##">注册</a>
+                                </li>
+
+                            </ul>
+                        </li>
+                    </ul>
+                    <form class="navbar-form navbar-right" role="search">
+                        <div class="form-group">
+                            <input type="text" class="form-control" placeholder="Search">
+                        </div>
+                        <button type="submit" class="btn btn-default">搜索</button>
+                    </form>
+
+                </div>
+                <!-- /.navbar-collapse -->
+            </div>
+            <!-- /.container-fluid -->
+        </nav>
+        <!--content部分-->
+        <div class="container">
+            <div id="content" class="col-md-8  col-lg-8 bd-white">
+                <h3>PPT干货】2016腾讯“云+未来”峰会 Cloud Native分论坛总结<br />
+               <small> 发布于 7 天前  作者 hejia12  1477 次浏览  来自 分享</small>
+               </h3>
+                <p>腾讯云大牛、云计算行业专家、B轮的极客学院 CTO、微票儿技术副总裁一起把 Cloud Native (云原生架构) 掰碎了给你看 Cloud Native (云原生架构) 意味面向可弹性调整存储、网络与计算能力的云计算环境而设计的软件架构，可适应快速变化、高度可扩展、高可用的业务需求。 也许你觉得 Cloud Native 不好理解，不知道如何落地。我们腾讯云邀请了行业专家分享他们的趋势观察、也邀请了走到B轮的极客学院 CTO、估值超百亿的微票儿技术副总裁分享他们的一线实践。务必让你有收获，赶紧来看直播吧…</p>
+            </div>
+            <div id="auther" class="col-md-3 col-md-offset-1 col-lg-3 bd-white display-none">
+                <!--<h5 class="text-center text-left">作者</h5>
+                <p class="text-center">
+                    <img class="" src="" />
+                    <a href="##">用户名</a>
+                    <p class="mark">积分:25</p>
+                    <p>个人签名</p>
+                 </p>-->
+
+            </div>
+        </div>
+        <div class="container">
+        	   <div id="pinglun" class="col-md-8  col-lg-8 bd-white">
+        	       <!--<h3 >评论区 <small> 6 回复</small></h3><hr />
+        	       <p >
+        	           <img src="https://avatars.githubusercontent.com/u/11937357?v=3&s=120"/>
+        	           <span>yonghuming <a href="##">1楼-1天前</a></span>
+        	           <div class="container-fluid">mongodb enterprise版本支持中文索引</div>
+        	       </p>-->
+        	       
+        	   </div>
+        </div>
+
+    </body>
+    
+    
+    
+    
+    
+    <script src="js/request.js" type="text/javascript" charset="utf-8"></script>
+    <script type="text/javascript">
+        //  alert(getUrlId("id"));
+        var url = "https://cnodejs.org/api/v1/topic/" + getUrlId("id");
+
+        //  alert(title.tagName);
+
+        requestByGET(url, function(responText) {
+            var obj = JSON.parse(responText);
+            console.log(obj);
+            var last_time = getTime(obj.data.last_reply_at);
+            var title = document.querySelector("#content h3");
+            title.innerHTML = "<h3>" + obj.data.title + "<br /><small> 发布于 " + last_time + "  作者 " + obj.data.author.loginname + "  " + obj.data.visit_count + " 次浏览  来自 " + obj.data.tab + "</small></h3>";
+            var content = document.querySelector("#content p");
+            content.innerHTML = obj.data.content;
+            $("#auther").append('<h5 >作者</h5>');
+            $("#auther h5").addClass("text-center ");
+            $("#auther").append("<p class='auther'></p>");
+            $("#auther .auther").append("<img src="+obj.data.author.avatar_url+" />");
+            $("#auther .auther img").css({"width":"5vw","min-width":"3em"});
+            $("#auther .auther").append("<a href='##'>"+obj.data.author.loginname+"</a>");
+            $("#auther .auther a").css("margin-left","1em");
+            $("#auther .auther").append("<p class='mark'>积分:25</p>");
+            $("#auther .auther").append("<p>个人签名</p>");
+            
+//          $(".container .pinglun").html("");
+            console.log(obj.data.replies.length);
+            $(".container #pinglun").append("<h3>评论区 <small> "+(obj.data.replies.length)+" 回复</small></h3><hr />")
+            for (var i = 0; i < obj.data.replies.length; i++) {
+                
+                
+                var reply_time = getTime(obj.data.replies[i].create_at);
+//              $(".container #pinglun").append("<p></p>");
+                $(".container #pinglun ").append("<img src='"+obj.data.replies[i].author.avatar_url+"'>");
+                $(".container #pinglun img").css({"width":"5vw","min-width":"3em"});
+                $(".container #pinglun").append("<span> "+ obj.data.replies[i].author.loginname+" <a href='##'>"+(i+1)+"楼-"+reply_time+"</a></span>");
+                $(".container #pinglun").append("<div class='container-fluid'>"+obj.data.replies[i].content+"</div>");
+                $(".container #pinglun").append("<hr>");
+//          	 obj.data.replies[i]
+             
+            }
+
+        })
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+
+        //求最后回复时间
+
+        function getTime(last_reply_at) {
+            var last_time = last_reply_at;
+            date1 = last_time.substring(0, 10);
+            date2 = last_time.substring(11, 19);
+            date = date1 + " " + date2;
+            date = date.substring(0, 19);
+            date = date.replace(/-/g, '/');
+            var last_timestamp = parseInt(new Date(date).getTime() / 1000);
+            var timestamp = parseInt(new Date().getTime() / 1000);
+            time = timestamp - last_timestamp;
+            if(time / 3600 / 24 >= 1) {
+                out_time = parseInt(time / 3600 / 24) + "天前";
+            } else if(time / 3600 >= 0) {
+                out_time = parseInt(time / 3600) + "小时前";
+            } else if(time / 60 >= 0) {
+                out_time = parseInt(time / 60) + "分钟前";
+            } else {
+                out_time = parseInt(time) + "秒前";
+            }
+            return out_time;
+        }
+        //获取url中的get参数
+        function getUrlId(name) {
+            var reg = new RegExp("(^|&)" + name + "=([^&]*)(&|$)");
+            var r = window.location.search.substr(1).match(reg);
+            if(r != null) return unescape(r[2]);
+            return null;
+        }
+    </script>
+
+</html>

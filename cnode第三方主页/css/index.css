@@ -1,0 +1,54 @@
+body{
+    background: #F8F8F8;
+}
+.bd-white{
+    background: white;
+}.bd-bottom{
+    background: #202020;
+    color: white;
+    margin-top: 2vh;
+}
+.shadow:hover{
+    transition: all 0.5s;
+    border-radius: 5px;
+    box-shadow: 10px 0px 20px  #888888;
+}
+ul{
+    padding: 0;
+}
+li{
+    list-style: none;
+}
+@media only screen and (min-width: 100px) and (max-width: 992px) {
+	#login{
+	    display: none;
+	}
+}
+#small-nav{
+    overflow: hidden;
+    float: none;
+}
+#content li img{
+    width: 10%;
+}
+#content li span{
+    margin-left: 2%;
+}
+#content li a {
+    padding-left: 2em;
+}
+#content li span:nth-last-child{
+    float: right;
+}
+.page-btn{
+    float: left;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    width: 9%;
+}
+.page-btns{
+    max-width: 750px;
+    overflow: hidden;
+    
+}
