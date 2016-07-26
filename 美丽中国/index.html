@@ -1,0 +1,404 @@
+<!DOCTYPE html>
+<html lang="zh">
+
+    <head>
+        <meta charset="utf-8">
+        <title>美丽中国</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
+
+        <!-- Link Swiper's CSS -->
+        <link rel="stylesheet" href="css/swiper-3.3.1.min.css">
+        <link rel="stylesheet" type="text/css" href="css/animate.min.css" />
+        <link rel="stylesheet" type="text/css" href="css/index.css" />
+
+        <!-- Demo styles -->
+        <style>
+            *{
+                transform-style: preserve-3d;   
+            }
+            html,
+            body {
+                position: relative;
+                height: 100%;
+            }
+            
+            body {
+                background: #eee;
+                font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+                font-size: 14px;
+                color: #000;
+                margin: 0;
+                padding: 0;
+            }
+            
+            .swiper-container {
+                width: 100%;
+                height: 100%;
+                /*background-color: red;*/
+            }
+            
+            .swiper-container .swiper-wrapper .swiper-slide {
+                text-align: center;
+                font-size: 18px;
+               
+                /*background-color: red;*/
+                background: url(img/page1_bd.png) no-repeat;
+                background-size: 100% 100%;
+                /* Center slide text vertically */
+                display: -webkit-box;
+                display: -ms-flexbox;
+                display: -webkit-flex;
+                display: flex;
+                -webkit-box-pack: center;
+                -ms-flex-pack: center;
+                -webkit-justify-content: center;
+                justify-content: center;
+                -webkit-box-align: center;
+                -ms-flex-align: center;
+                -webkit-align-items: center;
+                align-items: center;
+                -webkit-animation: page1 2s linear;
+            }
+            .swiper-container1 {
+                width: 500px;
+                height: 300px;
+                margin: 20px auto;
+            } 
+           #swiper2 .swiper-wrapper .swiper-slide{
+                text-align: center;
+                font-size: 18px;
+                -webkit-animation:none;
+                background: none;
+                /* Center slide text vertically */
+                display: -webkit-box;
+                display: -ms-flexbox;
+                display: -webkit-flex;
+                display: flex;
+                -webkit-box-pack: center;
+                -ms-flex-pack: center;
+                -webkit-justify-content: center;
+                justify-content: center;
+                -webkit-box-align: center;
+                -ms-flex-align: center;
+                -webkit-align-items: center;
+                align-items: center; 
+                
+            }
+            #swiper2 .swiper-wrapper .swiper-slide img {
+                width: 70%;
+                height: auto;
+            }
+            /*#swiper2-pagination{
+                transform: rotate(90deg);
+                position: absolute;
+                left: 2%;
+                top: 5%;
+            }*/
+        </style>
+    </head>
+
+    <body>
+        <!-- Swiper -->
+        <div class="swiper-container">
+            <div class="swiper-wrapper">
+                <!--这是第一屏,首页-->
+                <div id="page1" class="swiper-slide">
+                    <div id="start">
+
+                    </div>
+                    <div style="" class="text">
+
+                    </div>
+                    <img class="logo ani" swiper-animate-effect="fadeIn" swiper-animate-duration="1s" swiper-animate-delay="0.5s" src="img/logo.png" />
+                    <img class="yun_left ani" swiper-animate-effect="fadeInLeft" swiper-animate-duration="1s" swiper-animate-delay="0.5s" src="img/yun_left.png" />
+                    <img class="yun_right ani" swiper-animate-effect="fadeInRight" swiper-animate-duration="1s" swiper-animate-delay="0.5s" src="img/yun_right.png" />
+                    <img class="uptouch ani" swiper-animate-effect="flash" swiper-animate-duration="1s" swiper-animate-delay="2s" src="img/uptouch.png" />
+                </div>
+                <div class="swiper-slide">
+                    <div id="page2"></div>
+                    <div id="dot1"></div>
+                    <div id="dot2"></div>
+                    <div id="dot3"></div>
+                    <div id="dot4"></div>
+                    <div id="dot5"></div>
+
+                    <div id="dot61"></div>
+                    <div id="dot6"></div>
+                    <div id="dot7"></div>
+                    <div id="dot8"></div>
+                    <div id="dot9"></div>
+                    <div id="dot10"></div>
+                </div>
+                <div class="swiper-slide">
+                    <div id="page3_dot1"></div>
+                    <div id="page3_dot2"></div>
+                    <img id="page3_main" src="img/page3_main.png" />
+                    <img id="page3_bottom" class="ani" swiper-animate-effect="fadeIn" swiper-animate-duration="1s" swiper-animate-delay="" src="img/page3_botom.png" />
+                </div>
+                <div class="swiper-slide">
+                    <div id="page4"></div>
+                    <div id="page4_dot1"></div>
+                    <div id="page4_dot2"></div>
+                    <div id="page4_dot3"></div>
+                    <div id="page4_dot4"></div>
+                    <div id="page4_dot5"></div>
+                    <div id="page4_dot6"></div>
+                    <div id="page4_dot7"></div>
+                    <div id="page4_dot8"></div>
+                    <div id="page4_dot9"></div>
+                    <div id="page4_dot10"></div>
+                    <div id="page4_dot11"></div>
+                </div>
+                <div class="swiper-slide">
+                    <div id="page5_dot1"></div>
+                    <div id="page5_dot2"></div>
+                    <img id="page5_main" src="img/page5.png" />
+                    <img id="page5_bottom" class="ani" swiper-animate-effect="fadeIn" swiper-animate-duration="1s" swiper-animate-delay="" src="img/page3_botom.png" />
+                </div>
+                <!--page6开始-->
+                <div class="swiper-slide">
+                    <div id="page6"></div>
+                    <!--第一条线-->
+                     <div id="page6_dot11"></div>
+                     <div id="page6_dot12"></div>
+                     <div id="page6_dot13"></div>
+                     <!--第二条线-->
+                     <div id="page6_dot21"></div>
+                     <div id="page6_dot22"></div>
+                     <div id="page6_dot23"></div>
+                     <div id="page6_dot24"></div>
+                     <!--第三条线-->
+                     <div id="page6_dot31"></div>
+                     <div id="page6_dot32_1"></div>
+                     <div id="page6_dot32_2"></div>
+                     <div id="page6_dot33"></div>
+                     <div id="page6_dot34"></div>
+                     <div id="page6_dot35"></div>
+                </div>
+                <!--page7-->
+                <div class="swiper-slide">
+                    <div class="swiper-container1" id="swiper2">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide"><img src="img/paper1.png"/></div>
+                            <div class="swiper-slide"><img src="img/paper2.png"/></div>
+                            <div class="swiper-slide"><img src="img/paper3.png"/></div>
+                            <div class="swiper-slide"><img src="img/paper4.jpg"/></div>
+                            <div class="swiper-slide"><img src="img/paper5.jpg"/></div>
+                            <div class="swiper-slide"><img src="img/paper6.png"/></div>
+                            <div class="swiper-slide"><img src="img/paper7.jpg"/></div>
+                            <div class="swiper-slide"><img src="img/paper8.jpg"/></div>
+                            <div class="swiper-slide"><img src="img/paper9.jpg"/></div>
+                            <div class="swiper-slide"><img src="img/paper10.jpg"/></div>
+                            <div class="swiper-slide"><img src="img/paper11.jpg"/></div>
+                            <div class="swiper-slide"><img src="img/paper12.jpg"/></div>
+                            <div class="swiper-slide"><img src="img/paper13.jpg"/></div>
+                            <div class="swiper-slide"><img src="img/paper14.jpg"/></div>
+                            <div class="swiper-slide"><img src="img/paper15.jpg"/></div>
+                            <div class="swiper-slide"><img src="img/paper16.jpg"/></div>
+                            
+                        </div>
+                        <!-- 如果需要分页器 -->
+                        <!--<div class="swiper-pagination" id="swiper2-pagination"></div>-->
+                    </div>
+                    <img id="zuobiao" src="img/zuobiao.png"/>
+                </div>
+                <!--page8开始-->
+                <div class="swiper-slide">
+                    <div id="page8"></div>
+                    <!--第一条线-->
+                     <div id="page8_dot11"></div>
+                     <div id="page8_dot12"></div>
+                     <div id="page8_dot13"></div>
+                     <!--第二条线-->
+                     <div id="page8_dot21"></div>
+                     <div id="page8_dot22"></div>
+                     <div id="page8_dot23"></div>
+                     <!--第三条线-->
+                     <div id="page8_dot31"></div>
+                     <div id="page8_dot32"></div>
+                     <div id="page8_dot33"></div>
+                     <div id="page8_dot34"></div>
+                     <div id="page8_dot35"></div>
+                </div>
+                <div class="swiper-slide">
+                   <video id="page9" src="img/6417145-1hd.mp4" controls></video>
+                   
+                </div>
+            </div>
+            <!-- Add Pagination -->
+        </div>
+
+        <!-- Swiper JS -->
+        <script src="js/swiper-3.3.1.min.js"></script>
+        <script src="js/swiper.animate1.0.2.min.js" type="text/javascript" charset="utf-8"></script>
+
+        <script src="js/touch.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="js/index.js" type="text/javascript" charset="utf-8"></script>
+        <!-- Initialize Swiper -->
+        <script>
+        
+            var swiper = new Swiper('.swiper-container', {
+
+                paginationClickable: true,
+                direction: 'vertical',
+                mousewheelControl: true,
+                effect: 'coverflow',
+                initialSlide :8,
+
+                onInit: function(swiper) { //Swiper2.x的初始化是onFirstInit
+                    swiperAnimateCache(swiper); //隐藏动画元素 
+                    swiperAnimate(swiper); //初始化完成开始动画
+
+                },
+                onSlideChangeEnd: function(swiper) {
+                    swiperAnimate(swiper); //每个slide切换结束时也运行当前slide动画
+                    //                  alert();
+                    if (swiper.activeIndex == 1) {
+                        lineStart("#dot1", "#dot2", function() {
+                            lineStart("#dot2", "#dot3", function() {
+                                lineStart("#dot3", "#dot4", function() {
+                                    lineStart("#dot4", "#dot5")
+                                })
+                            })
+                        });
+                        lineStart("#dot61", "#dot7", function() {
+                            lineStart("#dot7", "#dot8");
+                        });
+                        lineStart("#dot6", "#dot9", function() {
+                            lineStart("#dot9", "#dot10");
+                        });
+                    }
+                    //page3的连线绘制
+                    if (swiper.activeIndex == 2) {
+                        lineStart("#page3_dot1", "#page3_dot2");
+                    }
+                    //page4的连线绘制
+                    if (swiper.activeIndex == 3) {
+                        lineStart("#page4_dot1", "#page4_dot2", function() {
+                            lineStart("#page4_dot2", "#page4_dot3", function() {
+                                lineStart("#page4_dot3", "#page4_dot4");
+                            })
+                        });
+                        lineStart("#page4_dot5", "#page4_dot6", function() {
+                            lineStart("#page4_dot6", "#page4_dot7", function() {
+                                lineStart("#page4_dot7", "#page4_dot8");
+                            })
+                        });
+                        lineStart("#page4_dot9", "#page4_dot10", function() {
+                            lineStart("#page4_dot10", "#page4_dot11")
+                        })
+                    }
+                    //page5的连线绘制
+                    if (swiper.activeIndex == 4) {
+                        lineStart("#page5_dot1", "#page5_dot2");
+                    }
+                    //page6的连线绘制
+                    if (swiper.activeIndex == 5) {
+                        lineStart("#page6_dot11", "#page6_dot12",function  () {
+                               lineStart("#page6_dot12","#page6_dot13")
+                        });
+                        lineStart("#page6_dot21", "#page6_dot22",function  () {
+                               lineStart("#page6_dot22","#page6_dot23",function  () {
+                               	lineStart("#page6_dot23","#page6_dot24");
+                               })
+                        });
+                        lineStart("#page6_dot31", "#page6_dot32_1",function  () {
+                               lineStart("#page6_dot32_1","#page6_dot33");
+                               lineStart("#page6_dot32_2", "#page6_dot34",function  () {
+                                lineStart("#page6_dot34","#page6_dot35");
+                                });
+                        });
+                    }
+                    //page8的连线绘制
+                    if (swiper.activeIndex == 7) {
+                        lineStart("#page8_dot11", "#page8_dot12",function  () {
+                        	   lineStart("#page8_dot12", "#page8_dot13");
+                        });
+                        lineStart("#page8_dot21", "#page8_dot22",function  () {
+                               lineStart("#page8_dot22", "#page8_dot23");
+                        });
+                        lineStart("#page8_dot31", "#page8_dot32",function  () {
+                               lineStart("#page8_dot32", "#page8_dot33",function  () {
+                               	lineStart("#page8_dot33", "#page8_dot34",function () {
+                               		lineStart("#page8_dot34", "#page8_dot35");
+                               	})
+                               });
+                        });
+                    }
+
+                }
+            });
+
+            //page3的点击放大
+            //          var page3_main =document.getElementById("page3_main");
+            (function  (){
+                var index = 0;
+    
+                touch.on('#page3_main', "tap", function(ev) {
+                    //              alert("dddd")
+                    if (index == 0) {
+                        page3_main.style.width = "100%";
+                        page3_main.style.left = "0";
+                        page3_main.style.top = "10%";
+                        index = 1;
+                    } else {
+                        page3_main.style.width = "84%";
+                        page3_main.style.left = "8%";
+                        page3_main.style.top = "16.8%";
+                        index = 0;
+                    }
+    
+                    page3_main.index = 1;
+                })
+                })();
+             //page5的点击放大
+             (function(){
+                var index = 0;
+    
+                touch.on('#page5_main', "tap", function(ev) {
+                    //              alert("dddd")
+                    if (index == 0) {
+                        page5_main.style.width = "100%";
+                        page5_main.style.left = "0";
+                        page5_main.style.top = "10%";
+                        index = 1;
+                    } else {
+                        page5_main.style.width = "84%";
+                        page5_main.style.left = "8%";
+                        page5_main.style.top = "16.8%";
+                        index = 0;
+                    }
+    
+                    page5_main.index = 1;
+                })
+                })();
+                
+                
+                
+             var mySwiper = new Swiper ('.swiper-container1', {
+                direction: 'horizontal',
+//              loop: true,
+                
+                // 如果需要分页器
+//              pagination: '.swiper-pagination',
+                effect : 'slide',
+                coverflow: {
+                    rotate: 30,
+                    stretch: 30,
+                    depth: 200,
+                    modifier: 2,
+                    slideShadows : false
+                },
+//              paginationType : 'progress'
+                onSlideChangeEnd: function(swiper) {
+//                  console.log(swiper.activeIndex);
+                    var zuobiao = document.getElementById("zuobiao");
+                    zuobiao.style.top = 40+swiper.activeIndex*60/16+"%";
+                }
+                
+            
+              })           
+        </script>
+    </body>
+
+</html>

@@ -1,0 +1,633 @@
+#page1 .text{
+    width: 100%;
+    height: 100%;
+    background: url(../img/page1text.png) no-repeat;
+    background-size: 100% 100%;
+    
+}
+#page1 .logo{
+    position: absolute;
+    width: 100%;
+    height: auto;
+    /*z-index: 1000;*/
+    top: 28.7%;
+    left: 0;
+}
+#page1 .yun_left{
+    position: absolute;
+    width: 100%;
+    height: auto;
+    /*z-index: 1000;*/
+    top: 15%;
+    left: 0;
+}
+#page1 .yun_right{
+    position: absolute;
+    width: 100%;
+    height: auto;
+    /*z-index: 1000;*/
+    top: 40%;
+    left: 0;
+}
+#page1 .uptouch{
+     position: absolute;
+    width: 100%;
+    height: auto;
+    /*z-index: 1000;*/
+    bottom: 5%;
+    left: 0;
+    animation: shan 2s  linear infinite;
+}
+
+#page2{
+    
+    width: 100%;
+    height: 100%;
+    background: url(../img/page2.png) no-repeat;
+    background-size: 100% 100%;
+}
+#dot1{
+    position: absolute;
+    top: 12.48%;
+    left: 0;
+    width: 1px;
+    height: 1px;
+    background: #FFFFFF;
+    animation: all 2s;
+     
+}
+#dot2{
+    position: absolute;
+    top: 21.2%;
+    left: 37%;
+    width: 1px;
+    height: 1px;
+    background: #FFFFFF;
+    
+     
+}
+#dot3{
+    position: absolute;
+    top: 84.5%;
+    left: 37%;
+    width: 1px;
+    height: 1px;
+    background: #FFFFFF;
+    
+     
+}
+#dot4{
+    position: absolute;
+    top: 84.5%;
+    left: 53%;
+    width: 1px;
+    height: 1px;
+    background: #FFFFFF;
+    
+     
+}
+#dot5{
+    position: absolute;
+    top: 100%;
+    left: 53%;
+    width: 1px;
+    height: 1px;
+    background: #FFFFFF;
+    
+     
+}
+#dot6{
+    position: absolute;
+    top: 80%;
+    left: 96.875%;
+    width: 1px;
+    height: 1px;
+    background: #FFFFFF;
+    
+     
+}
+#dot61{
+    position: absolute;
+    top: 80%;
+    left: 96.875%;
+    width: 1px;
+    height: 1px;
+    background: #FFFFFF;
+    transform: rotate(180deg);
+     
+}
+#dot7{
+    position: absolute;
+    top: 80%;
+    left: 63.1%;
+    width: 1px;
+    height: 1px;
+    background: #FFFFFF;
+    
+     
+}
+#dot8{
+    position: absolute;
+    top: 75%;
+    left: 63.1%;
+    width: 1px;
+    height: 1px;
+    background: #FFFFFF;
+    
+     
+}
+#dot9{
+    position: absolute;
+    top: 69.45%;
+    left: 63.1%;
+    width: 1px;
+    height: 1px;
+    background: #FFFFFF;
+    
+     
+}
+#dot10{
+    position: absolute;
+    top: 16.6%;
+    left: 63.1%;
+    width: 1px;
+    height: 1px;
+    background: #FFFFFF;
+    /*animation: .25s, 100ms infinite;*/
+     
+}
+
+/*第三页样式*/
+#page3_main{
+    width: 84%;
+    position: absolute;
+    top: 16.8%;
+    left: 8%;
+    transition: all 0.5s; 
+    
+}
+#page3_bottom{
+    
+    width: 100%;
+    position: absolute;
+    top: 79.6%;
+    left: 0;
+    transition: all 0.5s;
+}
+#page3_dot1{
+    position: absolute;
+    top: 0%;
+    left: 50%;
+    width: 1px;
+    height: 1px;
+    background: #FFFFFF;
+    /*animation: .25s, 100ms infinite;*/
+     
+}
+#page3_dot2{
+    position: absolute;
+    top: 9%;
+    left:50%;
+    width: 1px;
+    height: 1px;
+    background: #FFFFFF;
+    /*animation: .25s, 100ms infinite;*/
+     
+}
+/*page4样式*/
+#page4{
+    
+    width: 100%;
+    height: 100%;
+    background: url(../img/page4.png) no-repeat;
+    background-size: 100% 100%;
+}
+
+#page4_dot1{
+    position: absolute;
+    top: 80%;
+    left: 0;
+    width: 1px;
+    height: 1px;
+    background: #FFFFFF;
+    animation: all 2s;
+     
+}
+#page4_dot2{
+    position: absolute;
+    top: 91.5%;
+    left: 37.2%;
+    width: 1px;
+    height: 1px;
+    background: #FFFFFF;
+    
+     
+}
+#page4_dot3{
+    position: absolute;
+    top: 87.9%;
+    left: 37.2%;
+    width: 1px;
+    height: 1px;
+    background: #FFFFFF;
+    
+     
+}
+#page4_dot4{
+    position: absolute;
+    top: 87.9%;
+    left: 52%;
+    width: 1px;
+    height: 1px;
+    background: #FFFFFF;
+    
+     
+}
+/*第二部分划线*/
+#page4_dot5{
+    position: absolute;
+    top: 100%;
+    left: 52%;
+    width: 1px;
+    height: 1px;
+    background: #FFFFFF;
+    
+     
+}
+#page4_dot6{
+    position: absolute;
+    top: 80%;
+    left: 52%;
+    width: 1px;
+    height: 1px;
+    background: #FFFFFF;
+    
+     
+}
+
+#page4_dot7{
+    position: absolute;
+    top: 80%;
+    left: 63.1%;
+    width: 1px;
+    height: 1px;
+    background: #FFFFFF;
+    
+     
+}
+#page4_dot8{
+    position: absolute;
+    top: 75%;
+    left: 63.1%;
+    width: 1px;
+    height: 1px;
+    background: #FFFFFF;
+    
+     
+}
+/*第三部分划线*/
+#page4_dot9{
+    position: absolute;
+    top: 26%;
+    left: 100%;
+    width: 1px;
+    height: 1px;
+    background: #FFFFFF;
+    
+     
+}
+#page4_dot10{
+    position: absolute;
+    top: 17%;
+    left: 63.1%;
+    width: 1px;
+    height: 1px;
+    background: #FFFFFF;
+    /*animation: .25s, 100ms infinite;*/
+     
+}
+#page4_dot11{
+    position: absolute;
+    top: 69.64%;
+    left: 63.1%;
+    width: 1px;
+    height: 1px;
+    background: #FFFFFF;
+    transform: rotate(180deg);
+     
+}
+
+/*page5的样式*/
+
+#page5_main{
+    width: 84%;
+    position: absolute;
+    top: 16.8%;
+    left: 8%;
+    transition: all 0.5s; 
+    
+}
+#page5_bottom{
+    
+    width: 100%;
+    position: absolute;
+    top: 79.6%;
+    left: 0;
+    transition: all 0.5s;
+}
+#page5_dot1{
+    position: absolute;
+    top: 0%;
+    left: 50%;
+    width: 1px;
+    height: 1px;
+    background: #FFFFFF;
+    /*animation: .25s, 100ms infinite;*/
+     
+}
+#page5_dot2{
+    position: absolute;
+    top: 9%;
+    left:50%;
+    width: 1px;
+    height: 1px;
+    background: #FFFFFF;
+    /*animation: .25s, 100ms infinite;*/
+     
+}
+/*page6样式开始*/
+#page6{
+    width: 100%;
+    height: 100%;
+    background: url(../img/page6.png) no-repeat;
+    background-size: 100% 100%;   
+}
+#page6_dot11{
+    position: absolute;
+    top: 20%;
+    left: 0%;
+    width: 1px;
+    height: 1px;
+    background: #FFFFFF;
+}
+#page6_dot12{
+    position: absolute;
+    top: 32%;
+    left: 37.2%;
+    width: 1px;
+    height: 1px;
+    background: #FFFFFF;
+}
+#page6_dot13{
+    position: absolute;
+    top: 73.1%;
+    left: 37.2%;
+    width: 1px;
+    height: 1px;
+    background: #FFFFFF;
+}
+/*第二部分线*/
+#page6_dot21{
+    position: absolute;
+    top: 100%;
+    left: 30.6%;
+    width: 1px;
+    height: 1px;
+    background: #FFFFFF;
+}
+
+#page6_dot22{
+    position: absolute;
+    top: 80%;
+    left: 30.6%;
+    width: 1px;
+    height: 1px;
+    background: #FFFFFF;
+}
+#page6_dot23{
+    position: absolute;
+    top: 80%;
+    left: 63%;
+    width: 1px;
+    height: 1px;
+    background: #FFFFFF;
+}
+#page6_dot24{
+    position: absolute;
+    top: 75%;
+    left: 63%;
+    width: 1px;
+    height: 1px;
+    background: #FFFFFF;
+}
+/*第三部分线*/
+#page6_dot31{
+    position: absolute;
+    top: 26%;
+    left: 100%;
+    width: 1px;
+    height: 1px;
+    background: #FFFFFF;
+}
+
+#page6_dot32_1{
+    position: absolute;
+    top: 18%;
+    left: 68.75%;
+    width: 1px;
+    height: 1px;
+    background: #FFFFFF;
+}
+#page6_dot33{
+    position: absolute;
+    top: 65.7%;
+    left: 68.75%;
+    width: 1px;
+    height: 1px;
+    background: #FFFFFF;
+}
+
+/*分叉*/
+#page6_dot32_2{
+    position: absolute;
+    top: 18%;
+    left: 68.75%;
+    width: 1px;
+    height: 1px;
+    background: #FFFFFF;
+}
+#page6_dot34{
+    position: absolute;
+    top: 16.4%;
+    left: 63%;
+    width: 1px;
+    height: 1px;
+    background: #FFFFFF;
+}
+#page6_dot35{
+    position: absolute;
+    top: 69%;
+    left: 63%;
+    width: 1px;
+    height: 1px;
+    background: #FFFFFF;
+}
+/*page8样式开始*/
+#zuobiao{
+    height: 60%;
+    width: auto;
+    position: absolute;
+    top: 40%;
+    left: 0%;
+    transition: all 0.5s;
+}
+
+/*page8样式开始*/
+#page8{
+    width: 100%;
+    height: 100%;
+    background: url(../img/page8.png) no-repeat;
+    background-size: 100% 100%;   
+}
+/*第一条线的样式*/
+
+#page8_dot11{
+    position: absolute;
+    top: 12.5%;
+    left: 0%;
+    width: 1px;
+    height: 1px;
+    background: #FFFFFF;
+}
+#page8_dot12{
+    position: absolute;
+    top: 24%;
+    left: 37.5%;
+    width: 1px;
+    height: 1px;
+    background: #FFFFFF;
+}
+#page8_dot13{
+    position: absolute;
+    top: 73%;
+    left: 37.5%;
+    width: 1px;
+    height: 1px;
+    background: #FFFFFF;
+}
+/*第二条线的样式*/
+
+#page8_dot21{
+    position: absolute;
+    top: 78.7%;
+    left: 100%;
+    width: 1px;
+    height: 1px;
+    background: #FFFFFF;
+}
+#page8_dot22{
+    position: absolute;
+    top: 69%;
+    left: 63%;
+    width: 1px;
+    height: 1px;
+    background: #FFFFFF;
+}
+#page8_dot23{
+    position: absolute;
+    top: 33%;
+    left: 63%;
+    width: 1px;
+    height: 1px;
+    background: #FFFFFF;
+}
+/*第三条线的样式*/
+
+#page8_dot31{
+    position: absolute;
+    top: 84.3%;
+    left: 100%;
+    width: 1px;
+    height: 1px;
+    background: #FFFFFF;
+}
+#page8_dot32{
+    position: absolute;
+    top: 75%;
+    left: 63%;
+    width: 1px;
+    height: 1px;
+    background: #FFFFFF;
+}
+#page8_dot33{
+    position: absolute;
+    top: 80%;
+    left: 63%;
+    width: 1px;
+    height: 1px;
+    background: #FFFFFF;
+}
+#page8_dot34{
+    position: absolute;
+    top: 80%;
+    left: 37.5%;
+    width: 1px;
+    height: 1px;
+    background: #FFFFFF;
+}
+#page8_dot35{
+    position: absolute;
+    top: 100%;
+    left: 37.5%;
+    width: 1px;
+    height: 1px;
+    background: #FFFFFF;
+}
+/*page9样式开始*/
+#page9{
+    width: 100%;
+    height: auto;
+    position: absolute;
+    top: 10%;
+    left: 0;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/*动画列表*/
+@-webkit-keyframes page1{
+	0%{
+	    background:url(../img/bd0.png) no-repeat ;
+	    background-size: 100% 100%;
+	}
+	50%{
+	    /*transform: rotateX(100);*/
+	     /*background: #87CEEB;*/
+	}
+	100%{
+	    background:url(../img/page1_bd.png) no-repeat;
+	    background-size: 100% 100%;
+	}
+}
+
+@-webkit-keyframes shan{
+	0%{
+        opacity: 1;
+    }
+    50%{
+        opacity: 0.3;
+    }
+   
+    100%{
+        opacity: 1;
+    }
+}

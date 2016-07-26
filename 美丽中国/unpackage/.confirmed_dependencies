@@ -1,0 +1,25 @@
+{
+  "index.html": {
+    "href": "index.html",
+    "resources": [
+      "css/swiper-3.3.1.min.css",
+      "css/animate.min.css",
+      "css/index.css",
+      "img/page1_bd.png",
+      "js/swiper-3.3.1.min.js",
+      "js/swiper.animate1.0.2.min.js",
+      "js/touch.min.js",
+      "js/index.js",
+      "img/logo.png",
+      "img/yun_left.png",
+      "img/yun_right.png",
+      "img/uptouch.png",
+      "img/page3_main.png",
+      "img/page3_botom.png",
+      "img/page5.png",
+      "img/6417145-1hd.mp4"
+    ],
+    "refer": [],
+    "priority": 0
+  }
+}
