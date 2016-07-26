@@ -1,0 +1,76 @@
+img{
+	    vertical-align: middle;
+}
+#email{
+	display: block;
+	color: rgba(64, 64, 64, 0.7);
+    font-weight: 300;
+    background: none;
+    outline: none;
+    font-size: 18px;
+    padding: .5em 8em;
+    margin: 1em;
+    border: solid 1px #404040;
+    -webkit-appearance: none;
+    margin: 1em auto;
+}
+
+
+#header .navbar a{
+	font-size: 28px;
+}
+#header{
+	background: url(http://www.timyo.com/images/banner.jpg) no-repeat 0px 0px;
+    background-size: cover;
+    padding-bottom: 6em;
+    min-height: 100vh;
+}
+
+.banner-info h2{
+	font-size: 56px;
+}
+#phone ul {
+	position: relative;
+}
+#phone #img li{
+	width: 100%;
+	animation: all 0.5s;
+	
+	list-style: none;
+}
+#phone #img li img{
+	position: absolute;
+	right: 0;
+}
+#phone{
+	position: relative;
+}
+#phone .anniu{
+	position: absolute;
+	top: 800px;
+	right: 50px;
+}
+#phone .anniu li{
+	display: inline-block;
+	margin-left: 20px;
+	width: 20px;
+	height: 20px;
+	background: #a9a9a9;
+	border-radius: 50%;
+	border: 2px solid #a9a9a9;
+	
+}
+
+@media only screen and (max-width: 970px) {
+	#header{
+		background: none;
+	}
+	#tel{
+		display: none;
+	}
+}
+@media only screen and (max-width: 750px) {
+	#email{
+		width: 90%;
+	}
+}
