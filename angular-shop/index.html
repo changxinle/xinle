@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html ng-app="shop">
+
+    <head>
+        <meta charset="utf-8" />
+        <title>商城</title>
+        <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css" />
+    </head>
+
+    <body>
+        <div class="container-fluid" ng-controller="mainCtrl">
+            <div class="navbar navbar-inverse">
+                <a href="#" class="navbar-brand">导航</a>
+
+                <cart-info></cart-info>
+            </div>
+            <ng-view></ng-view>
+
+        </div>
+
+    </body>
+    <script src="js/angular.js" type="text/javascript" charset="utf-8"></script>
+    <script src="js/angular-route.js" type="text/javascript" charset="utf-8"></script>
+    <script src="js/customFilters.js" type="text/javascript" charset="utf-8"></script>
+    <script type="text/javascript">
+        //模块(module)
+        //我们通过angularjs提供的全局函数去创建模块;
+        //在angularjs中angular是一个全局对象,定义在全局对象中的函数就是全局函数,我们可以使用
+        //全局对象angular去调用全局函数
+        //如果我们使用ng-app指令定义了一个应用程序,我们必须创建一个同名的模块,便于我们后续功能的开发
+
+        var app = angular.module("shop", ["cFilters", "ngRoute"]);
+
+        app.config(function($routeProvider) {
+            $routeProvider.when("/products", {
+                templateUrl: "template/products.html"
+            });
+            $routeProvider.when("/checkout", {
+                templateUrl: "template/checkout.html"
+            });
+            $routeProvider.otherwise({
+                templateUrl: "template/products.html"
+            });
+        });
+
+        app.filter("unique", function() {
+                return function(data, propertyName) {
+                    var resultArray = [];
+                    var obj = {};
+                    for(var i = 0; i < data.length; i++) {
+                        data[i].category
+                    }
+                }
+            })
+            //系统提供了angular自带的指令,但实际开发过程中,你会发现系统提供的指令不能卖满足开发需求,我们需要自定指令
+            //我们通过directive函数来定义指令,我们需要为哪块添加指令,就用对象的模块来调用directive函数定义指令就好
+            //自定义指令的名称要使用驼峰法命名
+        app.directive("cartInfo", function() {
+            return {
+                //C代表class,A代表属性,E代表标签,M代表注释
+
+                restrict: "CAEM",
+                //如果想让M(注释)方式生效,就需要将replace设置为true
+                replace: true,
+                transclude: true,
+                //	 template:"<div class='navbar-text '><b>购物车</b>共三件199<span class='btn btn-default btn-sm'>查看</span>"+'<p ng-transclude></p>'+"</div>",
+                templateUrl: "template/cartInfo.html"
+            }
+        })
+        app.controller("mainCtrl", function($scope, $http) {
+            $scope.cartData = [];
+
+            $scope.cartInfo = function() {
+                var counts = 0;
+                var gong = 0;
+                for(var i = 0; i < $scope.cartData.length; i++) {
+                    counts += $scope.cartData[i].count;
+                    gong += $scope.cartData[i].count * $scope.cartData[i].price;
+                }
+                return [counts, gong];
+            }
+        });
+    </script>
+    <script src="js/prodects.js" type="text/javascript" charset="utf-8"></script>
+    <script src="js/cart.js" type="text/javascript" charset="utf-8"></script>
+
+</html>

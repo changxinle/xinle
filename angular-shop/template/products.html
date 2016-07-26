@@ -1,0 +1,27 @@
+<div class="container-fluid" ng-controller="productsCtrl">
+                <div class="panel panel-default row">
+                    <div class="col-md-3">
+                        <button class="btn btn-block btn-default btn-lg" ng-click="selectCategory('all')" ng-class="changeClassOfCategory('all')">全部</button>
+                        <button class="btn btn-default btn-block btn-lg " ng-repeat="category in products  | unipue:'category'" ng-click="selectCategory(category)" ng-class="changeClassOfCategory(category)">{{category}}</button>
+                        <!--<button class="btn btn-default btn-block btn-lg ">足球</button>
+                        <button class="btn btn-default btn-block btn-lg ">乒乓球拍</button>
+                        <button class="btn btn-default btn-block btn-lg ">网球拍</button>-->
+                    </div>
+                    <div class="col-md-9">
+                        <div class="well" ng-repeat="product in productsOfPage">
+                            <h3 class="">
+                                   {{product.name}}
+                                 <span class="pull-right label label-primary label-lg"> {{product.price|currency:"￥"}}</span>  
+                               </h3>
+                            <button class="btn btn-danger btn-sm pull-right" ng-click="addToCart(product)">加入购物车</button>
+                            <p>
+                                {{product.description}}
+
+                            </p>
+                        </div>
+                        <div class="pull-right btn-group">
+                            <button class="btn btn-default" ng-repeat="page in getPageNumbers()" ng-click="getProductsOfPage(page)" ng-class="changeClassOfSelectedPage(page)">{{page}}</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
