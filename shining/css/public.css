@@ -1,0 +1,110 @@
+/* 头部样式 */
+.header{
+	background-color: black;
+	height: 69px;
+}
+.navbar-header{
+	height: 69px;
+}
+.navbar-brand{
+	height: 33px;
+	padding: 18px 0;
+}
+.navbar{
+	background-color: transparent;
+	border:none;
+	margin: 0 auto;
+	padding: 0;
+	max-width: 1136px;
+	width: 100%;
+	z-index: 11;
+}
+.navbar-nav{
+	background-color: black;
+	margin: 0;
+}
+.navbar-nav li a{
+	box-sizing: border-box;
+	padding: 6px 12px 6px 12px;
+	margin: 19px 5px 18px 5px;
+	color: #a1a1a1;
+	font-weight: 500;
+	font-size: 16px;
+}
+.navbar-nav li:first-child a{
+	margin-left: 0;
+}
+.navbar-nav li:last-child a{
+	margin-right: 0;
+}
+.navbar .navbar-nav li a:hover{
+	border: 1px solid #7b7b7b;
+	padding: 5px 11px 5px 11px;
+	border-radius: 5px;
+	color: white;
+}
+.icon-bar{
+	background-color: #cee03e !important;
+}
+.navbar-toggle{
+	margin-top: 17px;
+	border:none;
+}
+.navbar-toggle:hover{
+	background-color: transparent !important;
+}
+
+/* 底部样式 */
+.email{
+	margin: 82px auto 0 auto;
+	display: block;
+	height: 26px;
+	width: 35px;
+	background: url(../img/sprites.png) -35px -100px no-repeat;
+	background-color: ;
+}
+.email:hover{
+	background: url(../img/sprites.png) left -100px no-repeat;
+}
+.links{
+	overflow: hidden;
+	width: 164px;
+	margin: 19px auto 36px auto;
+}
+.links li{
+	margin: 0 8px;
+	float: left;
+}
+.links li a{
+	display: block;
+	width: 25px;
+	height: 25px;
+}
+.links li:nth-child(1) a{
+	background:url(../img/sprites.png) -25px top no-repeat;
+}
+.links li:nth-child(2) a{
+	background:url(../img/sprites.png) -25px -25px no-repeat;
+}
+.links li:nth-child(3) a{
+	background:url(../img/sprites.png) -25px -50px no-repeat;
+}
+.links li:nth-child(4) a{
+	background:url(../img/sprites.png) -25px -75px no-repeat;
+}
+.links li:nth-child(1) a:hover{
+	background:url(../img/sprites.png) left top no-repeat;
+}
+.links li:nth-child(2) a:hover{
+	background:url(../img/sprites.png) left -25px no-repeat;
+}
+.links li:nth-child(3) a:hover{
+	background:url(../img/sprites.png) left -50px no-repeat;
+}
+.links li:nth-child(4) a:hover{
+	background:url(../img/sprites.png) left -75px no-repeat;
+}
+.copyright{
+	text-align: center;
+	color: #666666;
+}

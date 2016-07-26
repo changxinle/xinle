@@ -1,0 +1,279 @@
+h2{
+	margin: 0;
+	padding: 0;
+}
+img{
+	display: block;
+	vertical-align: middle;
+}
+.title{
+
+}
+.title h2{
+	font-size: 18px;
+	font-weight: 500;
+	color: #616161;
+	line-height: 27px;
+	padding-bottom: 23px;
+	padding-top: 76px;
+}
+.title h2 span{
+	display: inline-block;
+	border-radius: 5px;
+	box-sizing: border-box;
+	height: 27px;
+	width: 27px;
+	border: 1px solid #616161;
+	line-height: 25px;
+	text-align: center;
+	margin-right: 13px;
+}
+.title p{
+	font-size: 16px;
+	line-height: 22px;
+}
+.content-01{
+	background-color: #f2f2f3;
+}
+.mycontainer-01{
+	width: 100%;
+	max-width: 1136px;
+	margin: 0 auto;
+	padding-left: 50px;
+	box-sizing: border-box;
+	height: 587px;
+	position: relative;
+}
+.model{
+	width: 30%;
+}
+.model img{
+	width: 100%;
+}
+.build_02{
+	position: absolute;
+	bottom: 0;
+	right: 56px;
+}
+.mycontainer-02{
+	width: 100%;
+	height: 654px;
+	max-width: 1136px;
+	position: relative;
+	margin: 0 auto;
+	padding-left: 50px;
+}
+.build_03{
+	position: absolute;
+	top: 0;
+	right: 56px;
+}
+.clash{
+	width: 50%;
+}
+.clash p{
+	width: 80%;
+}
+.clash div{
+	margin-top: 20px;
+}
+.clash div img{
+	width: 49%;
+	float: left;
+}
+.clash div img:first-child{
+	margin-right: 2%;
+}
+.content-03{
+	background-color: #f2f2f3;
+}
+.mycontainer-03{
+	width: 100%;
+	max-width: 1136px;
+	position: relative;
+	margin: 0 auto;
+	height: 655px;
+	padding-left: 519px;
+}
+.build_04{
+	position: absolute;
+	bottom: 0;
+	left: 0;
+}
+.mep{
+	width: 90%;
+}
+.mep h2{
+	padding-top: 157px;
+}
+.mep p{
+	width: 50%;
+}
+.mep div{
+	margin-top: 20px;
+}
+.mep div img{
+	float: left;
+	width: 49%;
+}
+.mep div img:first-child{
+	margin-right: 2%;
+}
+.mycontainer-04{
+	width: 100%;
+	max-width: 1136px;
+	position: relative;
+	margin: 0 auto;
+	height: 655px;
+	padding-left: 250px;
+}
+.build_05{
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+.build_01{
+	position: absolute;
+	bottom: 0;
+	right: 22px;
+}
+.curtain{
+	z-index: 11;
+	position: relative;
+}
+.curtain p{
+	width: 40%;
+}
+.curtain div{
+	width: 50%;
+}
+.curtain div img{
+	width: 60%;
+}
+.curtain div img:first-child{
+	margin-bottom: 10px;
+}
+.content-05{
+	background-color: #f2f2f3;
+}
+.mycontainer-05{
+	width: 100%;
+	max-width: 1136px;
+	position: relative;
+	margin: 0 auto;
+	height: 655px;
+	padding-left: 50px;
+}
+.bim h2{
+	padding-top: 209px;
+}
+.bim p{
+	width: 40%;
+}
+.build_06{
+	position: absolute;
+	top: 0;
+	right: 22px;
+}
+@media screen and (max-width: 768px){
+	.title h2{
+		font-size: 14px;
+	}
+	.title p{
+		font-size: 12px;
+	}
+	.build_02{
+		position: absolute;
+		bottom: 0;
+		right: -40px;
+		width: 270px;
+	}
+	.build_03{
+		position: absolute;
+		top: 0;
+		right: -40px;
+		width: 270px;
+	}
+	.build_04{
+		position: absolute;
+		bottom: 0;
+		left: -110px;
+		width: 280px;
+	}
+	.build_05{
+		position: absolute;
+		top: 0;
+		left: -110px;
+		width: 280px;
+	}
+	.build_01{
+		position: absolute;
+		bottom: 0;
+		right: -45px;
+		width: 195px;
+	}
+	.build_06{
+		position: absolute;
+		top: 0;
+		right: -45px;
+		width: 290px;
+	}
+	.mycontainer-01,.mycontainer-02,.mycontainer-03,.mycontainer-04,.mycontainer-05{
+		height: 500px;
+		padding-left: 0;
+	}
+	.model{
+		width: 50%;
+	}
+	.model h2{
+		padding-top: 130px;
+	}
+	.clash{
+		width: 70%;
+	}
+	.clash p{
+		width: 100%;
+		line-height: 16px;
+	}
+	.mycontainer-03{
+		padding-left: 140px;
+	}
+	.mep p{
+		width: 100%;
+	}
+	.mycontainer-04{
+		padding-left: 140px;
+	}
+	.curtain{
+		width: 70%;
+	}
+	.curtain p{
+		width: 100%;
+	}
+	.curtain div{
+		width: 100%;
+	}
+	.curtain div img{
+		width: 70%;
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,25 @@
+/*reset样式*/
+body,h1,p,dl,dd,h1,h2,h3,h4,h5,h6{
+	margin:0px;
+}
+/*a连接的默认下划线样式*/
+a{
+	text-decoration:none;
+}
+/*有序列表的类型样式*/
+ol,ul{
+	list-style-type:none;
+	padding:0;
+	margin:0;
+}
+/*图片边框样式 火狐浏览器和其他浏览器中有效*/
+img{
+	border:none;
+	margin:0px;
+}
+/*body默认样式 字体识别*/
+body{
+	font:12px/1.5 Arial;
+}
+
+/*a  href:javascript:void(0)/javascriptp:;*/  

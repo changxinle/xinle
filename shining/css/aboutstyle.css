@@ -1,0 +1,27 @@
+.aboutus{
+	background: #e3e3e3 url(../img/aboutbg.jpg) center center no-repeat;
+	padding-bottom: 34px;
+}
+.aboutWrap{
+	margin: 100px 0 95px 0;
+}
+.aboutWrap h2{
+	line-height: 50px;
+	margin-bottom: 
+	font-size: 24px;
+}
+.aboutWrap p{
+	line-height: 25px;
+	font-size: 15px;
+	color: #595757;
+}
+.container .logolist1,.container .logolist2{
+	padding: 0;
+}
+.logolist1 li,.logolist2 li{
+	padding: 0 4px!important;
+	width: 20%;
+}
+.logolist li img{
+	width: 100%;
+}
