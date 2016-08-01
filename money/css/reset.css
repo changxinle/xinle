@@ -1,0 +1,162 @@
+*{
+	box-sizing: border-box;
+}
+/*部分css样式重置*/
+// html {
+// 	color: #000;
+// 	background: #FFF;
+// }
+/*边框样式*/
+body,div,dl,
+dt,dd,ul,ol,li,
+h1,h2,h3,h4,h5,h6,
+form,input,button,textarea,
+p,th,td,img,em,a,span {
+	margin: 0;
+	padding: 0;
+	outline: 0; 
+}
+/*表格样式*/
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+/*图片和按钮的边框消除样式*/
+img button{
+	border: none;
+
+}
+/*字体样式*/
+h1,h2,h3,h4,h5,h6,
+em,strong,span,a,i,b,
+input,button,textarea,select,
+dl,dt,dd,ul,ol,li,td,th,tr,p{
+    margin: 0;    
+    padding: 0;    
+    border: 0;    
+    outline: 0;    
+    font-weight: inherit;    
+    font-style: inherit;    
+    font-size: 12px;    
+    font-family: inherit;    
+    vertical-align: baselinebaseline; 
+    line-height: 12px; 
+}
+li {
+	list-style: none;
+}
+
+th {
+	text-align: left;
+}
+/*a标签的样式*/
+a{
+	text-decoration: none;
+	color: black;
+	font-weight: normal;
+	font-size: 12px;
+}
+.fs14{
+	font-size: 14px;
+}
+.fs16{
+	font-size: 16px;
+}
+.fs18{
+	font-size: 18px;
+}
+.yuan{
+	border-radius: 50%;
+}
+// 清除浮动
+.clearfix:before{
+	display: table;
+  	content: "";
+}
+.clearfix:after{
+	display: table;
+  	content: "";
+	clear: both;
+}
+
+.hidden{
+	display: none;
+}
+.show{
+	display: block;
+}
+/*右上角三横btn效果*/
+.menu_icon{
+	width: 0.520833rem;
+	height: 0.416667rem;
+	border: 1px solid #fff;
+	border-radius: 3px;
+	position: absolute;
+	top:0.104167rem;
+	right: 0.208333rem;
+	padding: 0.052083rem;
+}
+.menu_icon span{
+	display: block;
+	width: 0.364583rem;
+	margin:0.03125rem auto;
+	height: 0.052083rem;
+	background-color: #fff;
+	border-radius: 2px;
+}
+/*效果结束*/
+@media screen and (max-width:960px) {
+	:root{
+		font-size: 72px;
+	}
+	.hidden960{
+		display: none!important;
+	}
+	.show960{
+		display: block!important;
+	}
+}
+@media screen and (max-width:720px) {
+	:root{
+		font-size: 64px;
+	}
+	.hidden720{
+		display: none!important;
+	}
+	.show720{
+		display: block!important;
+	}
+}
+@media screen and (max-width:640px) {
+	:root{
+		font-size: 48px;
+	}
+	.hidden640{
+		display: none!important;
+	}
+	.show640{
+		display: block!important;
+	}
+}
+@media screen and (max-width:480px) {
+	:root{
+		font-size: 32px;
+	}
+	.hidden480{
+		display: none!important;
+	}
+	.show480{
+		display: block!important;
+	}
+}
+@media screen and (max-width:320px) {
+	:root{
+		font-size: 24px;
+	}
+	.hidden320{
+		display: none!important;
+	}
+	.show320{
+		display: block!important;
+	}
+}
